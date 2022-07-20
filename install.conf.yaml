@@ -17,4 +17,7 @@
     ~/.zlogin: zlogin
     ~/.zlogout: zlogout
     ~/.p10k.zsh: p10k.zsh
+    ~/.hyper.js: 
+        path: hyper.js
+        force: true
 
