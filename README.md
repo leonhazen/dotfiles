@@ -17,3 +17,7 @@ See https://github.com/anishathalye/dotbot for more info.
 ## VS Code
 
 VS Code config is synced via the built-in sync function. This is using my github account for auth.
+
+## asdf
+
+Includes [asdf](https://asdf-vm.com/) for managing runtime versions. Use `asdf install python <version>` or `asdf install nodejs latest` to install runtimes.

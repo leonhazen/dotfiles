@@ -20,3 +20,7 @@
     ~/.hyper.js:
       path: hyper.js
       force: true
+
+- asdf:
+  - plugin: python
+  - plugin: nodejs
