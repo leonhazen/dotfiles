@@ -5,7 +5,7 @@
 - brewfile:
     - Brewfile
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.gitconfig: gitconfig
@@ -17,7 +17,6 @@
     ~/.zlogin: zlogin
     ~/.zlogout: zlogout
     ~/.p10k.zsh: p10k.zsh
-    ~/.hyper.js: 
-        path: hyper.js
-        force: true
-
+    ~/.hyper.js:
+      path: hyper.js
+      force: true
