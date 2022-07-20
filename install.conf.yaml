@@ -1,6 +1,17 @@
+- defaults:
+    link:
+      relink: true
+
 - clean: ['~']
 
 - link:
     ~/.gitconfig: gitconfig
-
+    ~/.prezto: prezto
+    ~/.zshrc: zshrc
+    ~/.zprofile: zprofile
+    ~/.zpreztorc: zpreztorc
+    ~/.zshenv: zshenv
+    ~/.zlogin: zlogin
+    ~/.zlogout: zlogout
+    ~/.p10k.zsh: p10k.zsh
 
