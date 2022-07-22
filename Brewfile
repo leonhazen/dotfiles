@@ -51,7 +51,6 @@ cask "macdown"
 cask "rectangle"
 cask "skitch"
 cask "spotify"
-cask "tower"
 cask "vlc"
 cask "visual-studio-code"
 
