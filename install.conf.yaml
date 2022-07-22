@@ -10,13 +10,13 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.prezto: prezto
-    ~/.zshrc: zshrc
-    ~/.zprofile: zprofile
-    ~/.zpreztorc: zpreztorc
-    ~/.zshenv: zshenv
-    ~/.zlogin: zlogin
-    ~/.zlogout: zlogout
-    ~/.p10k.zsh: p10k.zsh
+    ~/.zshrc: zsh/zshrc
+    ~/.zprofile: zsh/zprofile
+    ~/.zpreztorc: zsh/zpreztorc
+    ~/.zshenv: zsh/zshenv
+    ~/.zlogin: zsh/zlogin
+    ~/.zlogout: zsh/zlogout
+    ~/.p10k.zsh: zsh/p10k.zsh
     ~/.hyper.js:
       path: hyper.js
       force: true
