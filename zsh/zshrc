@@ -34,5 +34,8 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 
 eval "$(mcfly init zsh)"
 
+# Do not save commands beginning with a space to zsh_history
+setopt HIST_IGNORE_SPACE
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
