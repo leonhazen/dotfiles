@@ -37,5 +37,7 @@ eval "$(mcfly init zsh)"
 # Do not save commands beginning with a space to zsh_history
 setopt HIST_IGNORE_SPACE
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
