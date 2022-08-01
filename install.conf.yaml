@@ -20,6 +20,7 @@
     ~/.hyper.js:
       path: hyper.js
       force: true
+    ~/.fzf.zsh: zsh/fzf.zsh
 
 - asdf:
   - plugin: python
