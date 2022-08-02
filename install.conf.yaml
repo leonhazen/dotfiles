@@ -8,19 +8,19 @@
 - clean: ["~"]
 
 - link:
-    ~/.gitconfig: gitconfig
+    ~/.gitconfig: config/gitconfig
     ~/.prezto: prezto
-    ~/.zshrc: zsh/zshrc
-    ~/.zprofile: zsh/zprofile
-    ~/.zpreztorc: zsh/zpreztorc
-    ~/.zshenv: zsh/zshenv
-    ~/.zlogin: zsh/zlogin
-    ~/.zlogout: zsh/zlogout
-    ~/.p10k.zsh: zsh/p10k.zsh
-    ~/.hyper.js:
-      path: hyper.js
-      force: true
-    ~/.fzf.zsh: zsh/fzf.zsh
+    ~/.zshrc: config/zsh/zshrc
+    ~/.zprofile: config/zsh/zprofile
+    ~/.zpreztorc: config/zsh/zpreztorc
+    ~/.zshenv: config/zsh/zshenv
+    ~/.zlogin: config/zsh/zlogin
+    ~/.zlogout: config/zsh/zlogout
+    ~/.p10k.zsh: config/zsh/p10k.zsh
+    ~/.hyper.js: config/hyper.js
+    ~/.fzf.zsh: config/zsh/fzf.zsh
+    ~/.config/linearmouse: config/linearmouse
+    ~/.config/nvim: config/nvim
 
 - asdf:
   - plugin: nodejs
