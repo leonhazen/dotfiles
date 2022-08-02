@@ -23,5 +23,5 @@
     ~/.fzf.zsh: zsh/fzf.zsh
 
 - asdf:
-  - plugin: python
   - plugin: nodejs
+  - plugin: python
