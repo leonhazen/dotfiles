@@ -23,6 +23,7 @@
     ~/.config/nvim: config/nvim
     ~/.config/helix: config/helix
     ~/.tmux.conf: config/tmux/tmux.conf
+    ~/.tmux: config/tmux
 
 - asdf:
   - plugin: nodejs

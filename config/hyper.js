@@ -148,7 +148,8 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyper-material-theme",
+    // "hyper-material-theme",
+    "nord-hyper",
     "hyper-pane",
     "hyper-highlight-active-pane",
   ],
