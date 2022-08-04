@@ -22,6 +22,8 @@
     ~/.config/linearmouse: config/linearmouse
     ~/.config/nvim: config/nvim
     ~/.config/helix: config/helix
+    ~/.tmux.conf: config/tmux/tmux.conf
+
 - asdf:
   - plugin: nodejs
   - plugin: python
