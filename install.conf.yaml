@@ -21,7 +21,7 @@
     ~/.fzf.zsh: config/zsh/fzf.zsh
     ~/.config/linearmouse: config/linearmouse
     ~/.config/nvim: config/nvim
-
+    ~/.config/helix: config/helix
 - asdf:
   - plugin: nodejs
   - plugin: python
