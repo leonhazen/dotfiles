@@ -24,6 +24,7 @@
     ~/.config/helix: config/helix
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.tmux: config/tmux
+    ~/.fig/settings.json: config/fig/settings.json
 
 - asdf:
   - plugin: nodejs
