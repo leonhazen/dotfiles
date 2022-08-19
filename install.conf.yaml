@@ -7,6 +7,10 @@
 
 - clean: ["~"]
 
+- create:
+    - ~/.config
+    - ~/.fig
+
 - link:
     ~/.gitconfig: config/gitconfig
     ~/.prezto: prezto
@@ -24,8 +28,10 @@
     ~/.config/helix: config/helix
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.tmux: config/tmux
-    ~/.fig/settings.json: config/fig/settings.json
+    ~/.fig/settings.json:
+        path: config/fig/settings.json
+        force: true
 
 - asdf:
-  - plugin: nodejs
-  - plugin: python
+    - plugin: nodejs
+    - plugin: python
