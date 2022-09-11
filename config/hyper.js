@@ -13,7 +13,7 @@ module.exports = {
 
     // font family with optional fallbacks
     fontFamily:
-      '"Hack Nerd Font", "MesloLGS Nerd Font", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      '"Cartograph CF", "Hack Nerd Font", "MesloLGS Nerd Font", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -143,7 +143,10 @@ module.exports = {
     opacity: {
       focus: 0.95,
       blur: 0.8
-    }
+    },
+
+    // catppuccin Theme
+    catppuccinTheme: 'mocha'
   },
 
   // a list of plugins to fetch and install from npm
@@ -152,8 +155,11 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [// "hyper-material-theme",
-  "nord-hyper", "hyper-pane", "hyper-highlight-active-pane", "hyper-opacity"],
+  plugins: [
+  // "hyper-material-theme",
+  // "nord-hyper",
+  "hyper-pane", "hyper-highlight-active-pane", "hyper-opacity", "hypurr#latest"
+],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
