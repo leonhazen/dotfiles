@@ -70,6 +70,7 @@ cask "skitch"
 cask "spotify"
 cask "vlc"
 cask "visual-studio-code"
+cask "ytmdesktop-youtube-music"
 
 # Fonts
 cask "font-hack-nerd-font"
