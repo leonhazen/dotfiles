@@ -11,7 +11,8 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- theme
-  use 'folke/tokyonight.nvim'
+  -- use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- glow for markdown previews - requires glow to be installed
   use 'ellisonleao/glow.nvim'
