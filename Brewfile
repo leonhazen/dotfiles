@@ -60,7 +60,7 @@ cask "dash"
 cask "fig"
 cask "figma"
 cask "firefox"
-cask "flux"
+#cask "flux" -- trying native mac night shift settings
 cask "gimp"
 cask "google-chrome"
 cask "google-drive"
@@ -82,8 +82,11 @@ cask "homebrew/cask-fonts/font-meslo-lg-nerd-font"
 
 # Mac App Store Apps
 mas "Amphetamine", id: 937984704
-mas "Trello", id: 1278508951
-mas "Kindle", id: 405399194
+mas "Friendly Streaming", id: 553245401
 mas "Gestimer", id: 990588172
+mas "Kindle", id: 405399194
 mas "Microsoft Remote Desktop", id: 1295203466
+mas "Parcel", id: 639968404
+mas "Tailscale", id: 1475387142
 mas "ToothFairy", id: 1191449274
+mas "Trello", id: 1278508951
