@@ -23,6 +23,7 @@
     ~/.p10k.zsh: config/zsh/p10k.zsh
     ~/.hyper.js: config/hyper.js
     ~/.fzf.zsh: config/zsh/fzf.zsh
+    ~/.config/bat: config/bat
     ~/.config/linearmouse: config/linearmouse
     ~/.config/nvim: config/nvim
     ~/.config/helix: config/helix
@@ -35,3 +36,6 @@
 - asdf:
     - plugin: nodejs
     - plugin: python
+
+- shell:
+    - [bat cache --build, Rebuilding bat cache for custom theme]
