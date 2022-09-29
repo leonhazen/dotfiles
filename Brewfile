@@ -59,7 +59,6 @@ cask "bartender"
 cask "brave-browser"
 cask "cheatsheet"
 cask "dash"
-cask "fig"
 cask "figma"
 cask "firefox"
 #cask "flux" -- trying native mac night shift settings

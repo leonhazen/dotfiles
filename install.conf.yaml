@@ -9,7 +9,6 @@
 
 - create:
     - ~/.config
-    - ~/.fig
 
 - link:
     ~/.gitconfig: config/gitconfig
@@ -29,9 +28,6 @@
     ~/.config/helix: config/helix
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.tmux: config/tmux
-    ~/.fig/settings.json:
-        path: config/fig/settings.json
-        force: true
 
 - asdf:
     - plugin: nodejs
