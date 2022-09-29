@@ -141,8 +141,8 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
 
     opacity: {
-      focus: 0.95,
-      blur: 0.8
+      focus: 0.97,
+      blur: 0.9
     },
 
     // catppuccin Theme
