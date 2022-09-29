@@ -145,6 +145,9 @@ module.exports = {
       blur: 0.9
     },
 
+    // Allow option (alt) as meta key
+    modifierKeys: { altIsMeta: true },
+
     // catppuccin Theme
     catppuccinTheme: 'mocha'
   },
@@ -158,7 +161,8 @@ module.exports = {
   plugins: [
   // "hyper-material-theme",
   // "nord-hyper",
-  "hyper-pane", "hyper-highlight-active-pane", "hyper-opacity", "hypurr#latest"
+  //"hyper-pane",
+  "hyper-highlight-active-pane", "hyper-opacity", "hypurr#latest"
 ],
 
   // in development, you can create a directory under
