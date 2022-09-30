@@ -149,7 +149,14 @@ module.exports = {
     modifierKeys: { altIsMeta: true },
 
     // catppuccin Theme
-    catppuccinTheme: 'mocha'
+    catppuccinTheme: 'mocha',
+
+    hyperTabs: {
+      border: true,
+      tabIcons: true,
+      tabIconsColored: false,
+      closeAlign: 'left'
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -159,16 +166,17 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-  // "hyper-material-theme",
-  // "nord-hyper",
-  //"hyper-pane",
-  "hyper-highlight-active-pane", "hyper-opacity", "hypurr#latest"
-],
+    "hyper-opacity",
+    "hypurr#latest",
+    "hyper-quit",
+    "hyper-tabs-enhanced",
+    "hyper-tab-icons-plus"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: ["fig-hyper-integration"],
+  localPlugins: [],
 
   keymaps: {
     // Example
