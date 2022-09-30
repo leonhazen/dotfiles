@@ -1,0 +1,24 @@
+if [[ $# -eq 1 ]]; then
+    sesh=$1
+else
+    sesh=$(tmux ls | fzf | cut -d: -f1)
+fi
+
+if [[ -z $sesh ]]; then
+    echo "No session selected"
+    return 1 
+fi
+
+# If we're not inside tmux, start and/or attach to the session
+if [[ -z $TMUX ]]; then
+    tmux new-session -As $sesh
+    return 0
+fi
+
+# If we are inside tmux, create a new detatched session (if needed)
+if ! tmux has-session -t $sesh; then
+    tmux new-session -ds $sesh
+fi
+
+# Switch to the detatched (or previously existing) session
+tmux switch-client -t $sesh

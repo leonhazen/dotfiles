@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+# Attempting to use Charm's gum to do the same thing as the simple function using fzf does in tm.
+# This is a work in progress. It's working, but ugly.
+# Note that's no problem with charm, just my never ending struggle with shell scripts :)
+
+create-and-switch-to-session(){
+    # If we're not inside tmux, start and/or attach to the session
+    if [[ -z ${TMUX} ]]; then
+        tmux new-session -As "$1"
+        return 0
+    fi
+
+    # If we are inside tmux, create a new detatched session (if needed)
+    if ! tmux has-session -t "$1"; then
+        tmux new-session -ds "$1"
+    fi
+
+    # Switch to the detatched (or previously existing) session
+    tmux switch-client -t "$1"
+    return 0
+}
+
+pick-session(){
+    echo -e "${1}$(tmux ls)" | gum choose | cut -d: -f1
+}
+
+if [[ $# -eq 1 ]]; then
+    echo "1 param: $1"
+    if ! tmux has-session -t "$1"; then
+        echo "Session $1 does not exist"
+        # Forcing another option at the top of the list for new sessions when they don't exist.
+        # Because we'll then cut it at the first colon, it'll get the name entered as the param.
+        session=$(pick-session "${1}: (NEW SESSION)\n")
+    else
+        echo "Session $1 exists"
+        create-and-switch-to-session "$1";
+    fi
+fi
+
+if [[ $# -eq 0 ]]; then
+    echo "no params"
+    session=$(pick-session)
+fi
+
+if ! tmux has-session -t "${session}"; then
+    echo "Session ${session} does not exist"
+    if ! gum confirm "Create new session '${session}'?"; then
+        echo "Cancelled."
+        exit 1
+    fi
+fi
+
+echo "Final create/switch to session: ${session}"
+create-and-switch-to-session "${session}"
