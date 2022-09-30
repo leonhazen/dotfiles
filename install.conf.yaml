@@ -1,6 +1,6 @@
 - defaults:
     link:
-      relink: true
+        relink: true
 
 - brewfile:
     - Brewfile
@@ -28,6 +28,7 @@
     ~/.config/helix: config/helix
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.tmux: config/tmux
+    ~/.func: config/zsh/func
 
 - asdf:
     - plugin: nodejs
