@@ -2,9 +2,6 @@
     link:
         relink: true
 
-- brewfile:
-    - Brewfile
-
 - clean: ["~"]
 
 - create:
@@ -29,6 +26,10 @@
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.tmux: config/tmux
     ~/.func: config/zsh/func
+    ~/.config/kitty: config/kitty
+
+- brewfile:
+    - Brewfile
 
 - asdf:
     - plugin: nodejs
