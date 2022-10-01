@@ -52,6 +52,7 @@ brew "zlib"
 brew "zsh"
 
 # Casks (GUI Apps)
+cask "alacritty"
 cask "alfred"
 cask "alt-tab"
 cask "authy"
@@ -66,9 +67,10 @@ cask "gimp"
 cask "google-chrome"
 cask "google-drive"
 #cask "hyper" -- trying kitty instead
-cask "kitty"
+#cask "kitty" -- onto the next one, alacritty
 cask "linearmouse"
 cask "macdown"
+cask "mimestream"
 cask "obsidian"
 cask "rectangle"
 cask "skitch"
@@ -81,6 +83,7 @@ cask "font-hack-nerd-font"
 cask "font-inconsolata-for-powerline"
 cask "font-menlo-for-powerline"
 cask "font-meslo-lg-nerd-font"
+cask "font-sauce-code-pro-nerd-font"
 
 # Mac App Store Apps
 mas "Amphetamine", id: 937984704

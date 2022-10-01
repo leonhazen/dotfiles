@@ -27,6 +27,7 @@
     ~/.tmux: config/tmux
     ~/.func: config/zsh/func
     ~/.config/kitty: config/kitty
+    ~/.config/alacritty: config/alacritty
 
 - brewfile:
     - Brewfile
