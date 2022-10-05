@@ -5,7 +5,7 @@
 ALACRITTY_SCHEMES_FILE=~/.config/alacritty/color-schemes.yml
 
 local input=$1
-local schemes=$(yq '.schemes.[] | key' $ALACRITTY_SCHEMES_FILE)
+local schemes=$(yq 'sort_keys(.schemes) | .schemes.[] | key' $ALACRITTY_SCHEMES_FILE)
 
 # If no input, or input isn't an available scheme, then show the list of schemes for selection
 if [[ -z $input ]] || ! (echo $schemes | grep -qFx ${input}); then
