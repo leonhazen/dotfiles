@@ -20,7 +20,7 @@ window:
 
 font:
   normal:
-    family: SauceCodePro Nerd Font Mono
+    family: Hack Nerd Font Mono
 
   size: 14.0
   builtin_box_drawing: true
