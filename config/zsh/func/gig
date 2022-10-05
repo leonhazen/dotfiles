@@ -7,7 +7,11 @@
 # If you want to save this output somewhere else, invoke like 'gig >> /path/to/other/.gitignore'
 
 
-selections=$(curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/list | tr "," "\n" | gum filter --prompt "Select gitignore(s)> " --placeholder "Type to filter options. Use tab to pick multiple, enter when done." --no-limit | tr "\n" ","  | sed 's/,$/\n/')
+selections=$(curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/list \
+| tr "," "\n" \
+| gum filter --prompt "Select gitignore(s)> " --placeholder "Type to filter options. Use tab to pick multiple, enter when done." --no-limit \
+| tr "\n" ","  \
+| sed 's/,$/\n/')
 
 if [[ -z "${selections}" ]]; then
     echo "No selections made. Exiting."
