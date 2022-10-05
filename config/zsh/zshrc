@@ -41,7 +41,7 @@ function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;
 
 # Custom Functions
 fpath=(~/.func $fpath)
-autoload -Uz pods help kp tm gig
+autoload -Uz pods help kp tm gig ath
 
 # fzf goodness
 export FZF_DEFAULT_OPTS=" \

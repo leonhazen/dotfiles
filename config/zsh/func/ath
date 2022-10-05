@@ -1,0 +1,18 @@
+# function ath - change alacritty theme
+# Usage: ath [theme]
+# If no theme is specified, a list of available themes is shown.
+
+ALACRITTY_SCHEMES_FILE=~/.config/alacritty/color-schemes.yml
+
+local input=$1
+local schemes=$(yq '.schemes.[] | key' $ALACRITTY_SCHEMES_FILE)
+
+# If no input, or input isn't an available scheme, then show the list of schemes for selection
+if [[ -z $input ]] || ! (echo $schemes | grep -qFx ${input}); then
+    scheme=$(echo $schemes | fzf --header='Select Alacritty theme: ')
+else
+    scheme=$input
+fi
+
+# Update colors in color scheme file to alias of selected scheme anchor
+yq -i '.colors alias = "'${scheme}'"' $ALACRITTY_SCHEMES_FILE
