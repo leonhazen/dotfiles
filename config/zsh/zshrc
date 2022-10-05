@@ -50,5 +50,10 @@ export FZF_DEFAULT_OPTS=" \
   --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
   --height 40% --layout=reverse --border"
 
+export NAVI_CONFIG="$HOME/.config/navi/config.yaml"
+export NAVI_FZF_OVERRIDES='--height 80%'
+
 # Use bat as man pager - can use batman instead, but muscle memory wins
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+eval "$(navi widget zsh)"
