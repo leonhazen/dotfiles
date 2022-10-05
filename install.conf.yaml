@@ -30,6 +30,7 @@
     ~/.config/alacritty: config/alacritty
     ~/.config/htop: config/htop
     ~/.config/bpytop: config/bpytop
+    ~/.config/neofetch: config/neofetch
 
 - brewfile:
     - Brewfile
