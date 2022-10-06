@@ -22,25 +22,12 @@ autoload -Uz pods help kp tm gig ath
 # Auto completions
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
 # Mcfly for better searching of history with ctrl+R
 eval "$(mcfly init zsh)"
+
 # Set up 'fuck' alias for thefuck corrections
 eval $(thefuck --alias)
 
-# FZF defaults (catppuccin colours)
-export FZF_DEFAULT_OPTS=" \
-  --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
-  --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
-  --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
-  --height 60% --layout=reverse --border"
-
-# navi widget and config. Widget gives ctrl+g shortcut
-export NAVI_CONFIG="$HOME/.config/navi/config.yaml"
-export NAVI_FZF_OVERRIDES='--height 80%'
+# Set up 'navi' for ctrl+G cheatsheets
 eval "$(navi widget zsh)"
-
-# Use bat as man pager - can use batman instead, but muscle memory usually wins
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
-# Do not save commands beginning with a space to zsh_history
-setopt HIST_IGNORE_SPACE
