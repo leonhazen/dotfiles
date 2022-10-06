@@ -44,7 +44,8 @@ zstyle ':prezto:load' pmodule \
   'autosuggestions' \
   'prompt' \
   'kube-aliases' \
-  'tmux'
+  'tmux' \
+  'osx'
 
 #
 # Autosuggestions
@@ -122,7 +123,7 @@ zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+#zstyle ':prezto:module:prompt' theme 'sorin'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
@@ -173,9 +174,9 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets'
 #   'pattern' \
 #   'line' \
 #   'cursor' \
@@ -230,4 +231,4 @@ zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 # Enabled safe options. This aliases cp, ln, mv and rm so that they prompt
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
-# zstyle ':prezto:module:utility' safe-ops 'yes'
+zstyle ':prezto:module:utility' safe-ops 'no'
