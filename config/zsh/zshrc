@@ -31,3 +31,6 @@ eval $(thefuck --alias)
 
 # Set up 'navi' for ctrl+G cheatsheets
 eval "$(navi widget zsh)"
+
+# asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
