@@ -26,7 +26,6 @@
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.tmux: config/tmux
     ~/.func: config/zsh/func
-    ~/.config/kitty: config/kitty
     ~/.config/alacritty: config/alacritty
     ~/.config/htop: config/htop
     ~/.config/bpytop: config/bpytop
