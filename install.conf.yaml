@@ -30,6 +30,7 @@
     ~/.config/bpytop: config/bpytop
     ~/.config/neofetch: config/neofetch
     ~/.config/navi: config/navi
+    ~/.config/lf: config/lf
     ~/.utils: utils
 
 - brewfile:
