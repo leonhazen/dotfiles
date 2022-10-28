@@ -14,9 +14,15 @@ mod2:
     - shift
     - control
 
+floating:
+    - "com.apple.systempreferences"
+
 mouse-resizes-windows: true
 mouse-swaps-windows: true
 
 # Add 10px margin between windows
 window-margins: true
 window-margin-size: 10
+
+# Top padding needed if using sketchybar
+# screen-padding-top: 45
