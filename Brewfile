@@ -5,6 +5,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "FelixKratz/formulae" # for sketchy bar
 
 # CLI apps
 brew "asciinema"
@@ -19,6 +20,7 @@ brew "cowsay"
 brew "duf"
 brew "eth-p/software/bat-extras"
 brew "exa"
+# brew "felixkratz/formulae/sketchybar" # still testing to see if I want to use this
 brew "fd"
 brew "fzf"
 brew "git"
@@ -62,6 +64,7 @@ cask "firefox"
 cask "gimp"
 cask "google-chrome"
 cask "google-drive"
+cask "karabiner-elements"
 cask "linearmouse"
 cask "macdown"
 cask "mimestream"
