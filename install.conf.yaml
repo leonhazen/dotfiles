@@ -32,6 +32,7 @@
     ~/.config/navi: config/navi
     ~/.config/lf: config/lf
     ~/.utils: utils
+    ~/.amethyst.yml: config/amethyst/amethyst.yml
 
 - brewfile:
     - Brewfile
