@@ -17,7 +17,7 @@ prompt powerlevel10k
 
 # Custom Functions
 fpath=(~/.func $fpath)
-autoload -Uz pods help kp tm gig ath
+autoload -Uz pods help kp tm gig ath switchdesktop
 
 # Auto completions
 autoload -U +X bashcompinit && bashcompinit
