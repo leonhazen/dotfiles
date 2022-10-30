@@ -78,6 +78,7 @@ cask "visual-studio-code"
 # Fonts
 cask "font-hack-nerd-font"
 cask "font-inconsolata-for-powerline"
+cask "font-jetbrains-mono-nerd-font"
 cask "font-menlo-for-powerline"
 cask "font-meslo-lg-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
