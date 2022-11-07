@@ -36,3 +36,12 @@ eval "$(navi widget zsh)"
 
 # asdf
 . /usr/local/opt/asdf/libexec/asdf.sh
+
+# ls/exa aliases
+if [ -x "$(command -v exa)" ]; then
+    alias ls="exa --group-directories-first --classify"
+    alias ll="exa --group-directories-first --classify --icons --header --git --long"
+    alias la="exa --group-directories-first --classify --icons --header --git --long --all"
+    alias lt="exa --group-directories-first --icons --tree"
+    alias lta="exa --group-directories-first --icons --tree --all"
+fi
