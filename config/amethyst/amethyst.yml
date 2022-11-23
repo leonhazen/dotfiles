@@ -4,7 +4,7 @@ layouts:
     - widescreen-tall-right
     - two-pane
     - fullscreen
-    - wide
+    - row
 
 mod1:
     - option

@@ -461,4 +461,4 @@ schemes:
       magenta: '#ff55ff'
       cyan: '#ffd700'
       white: '#ffffff'
-colors: *tokyo-night
+colors: *monokai-pro
