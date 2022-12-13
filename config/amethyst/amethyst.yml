@@ -1,9 +1,9 @@
 # Use tall and fullscreen layouts
 layouts:
-    - widescreen-tall
-    - widescreen-tall-right
     - two-pane
     - fullscreen
+    - widescreen-tall
+    - widescreen-tall-right
     - row
 
 mod1:
