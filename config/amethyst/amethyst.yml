@@ -5,6 +5,7 @@ layouts:
     - widescreen-tall
     - widescreen-tall-right
     - row
+    - wide
 
 mod1:
     - option
