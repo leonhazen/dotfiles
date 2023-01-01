@@ -17,6 +17,8 @@ mod2:
 
 floating:
     - "com.apple.systempreferences"
+    - "org.videolan.vlc"
+    - "com.valvesoftware.steam"
 
 mouse-resizes-windows: true
 mouse-swaps-windows: true
