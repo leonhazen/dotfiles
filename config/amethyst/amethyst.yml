@@ -19,6 +19,11 @@ floating:
     - "com.apple.systempreferences"
     - "org.videolan.vlc"
     - "com.valvesoftware.steam"
+    - "com.teamviewer.TeamViewer"
+    - "com.authy.authy-mac"
+    - "com.tann.dice.desktop"
+    - "com.philandro.anydesk"
+    - "com.electron.moonitor"
 
 mouse-resizes-windows: true
 mouse-swaps-windows: true
