@@ -6,6 +6,9 @@ layouts:
     - widescreen-tall-right
     - row
     - wide
+    - 3column-left
+    - middle-wide
+    - 3column-right
 
 mod1:
     - option
