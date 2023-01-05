@@ -9,6 +9,7 @@ layouts:
     - 3column-left
     - middle-wide
     - 3column-right
+    - floating
 
 mod1:
     - option
