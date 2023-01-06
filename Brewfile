@@ -6,6 +6,9 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "ferdium/ferdium"
+
+
 
 # CLI apps
 brew "asdf"
@@ -21,6 +24,7 @@ brew "cowsay"
 brew "duf"
 brew "eth-p/software/bat-extras"
 brew "exa"
+brew "ferdium"
 brew "fd"
 brew "flux"
 brew "fzf"
