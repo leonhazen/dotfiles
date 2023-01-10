@@ -11,6 +11,7 @@ tap "ferdium/ferdium"
 # CLI apps
 brew "asdf"
 brew "ansible"
+brew "argocd"
 brew "awscli"
 brew "bat"
 brew "bitwarden-cli"
