@@ -8,8 +8,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "ferdium/ferdium"
 
-
-
 # CLI apps
 brew "asdf"
 brew "ansible"
@@ -24,7 +22,6 @@ brew "cowsay"
 brew "duf"
 brew "eth-p/software/bat-extras"
 brew "exa"
-brew "ferdium"
 brew "fd"
 brew "flux"
 brew "fzf"
@@ -65,6 +62,7 @@ cask "bartender"
 cask "brave-browser"
 cask "cron"
 cask "dash"
+cask "ferdium"
 cask "figma"
 cask "firefox"
 cask "gimp"
@@ -77,7 +75,7 @@ cask "ngrok"
 cask "obsidian"
 cask "raycast"
 cask "shottr"
-cask "spotify"
+cask "vivaldi"
 cask "vlc"
 cask "visual-studio-code"
 
@@ -99,3 +97,5 @@ mas "Parcel", id: 639968404
 mas "Tailscale", id: 1475387142
 mas "ToothFairy", id: 1191449274
 mas "Trello", id: 1278508951
+mas "rcmd", id: 1596283165
+mas "Flow", id: 1423210932
