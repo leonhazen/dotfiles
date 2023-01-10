@@ -65,3 +65,7 @@ fi
 
 # Do not save commands beginning with a space to zsh_history
 setopt HIST_IGNORE_SPACE
+
+# Disable auto corrections, we can use 'fuck' if we want to
+unsetopt correct_all
+unsetopt correct
