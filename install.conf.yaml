@@ -19,12 +19,11 @@
     ~/.p10k.zsh: config/zsh/p10k.zsh
     ~/.hyper.js: config/hyper.js
     ~/.fzf.zsh: config/zsh/fzf.zsh
+    ~/.tmux.conf: config/tmux/tmux.conf
     ~/.config/bat: config/bat
     ~/.config/linearmouse: config/linearmouse
     ~/.config/nvim: config/nvim
     ~/.config/helix: config/helix
-    ~/.tmux.conf: config/tmux/tmux.conf
-    ~/.func: config/zsh/func
     ~/.config/alacritty: config/alacritty
     ~/.config/htop: config/htop
     ~/.config/bpytop: config/bpytop
@@ -32,8 +31,9 @@
     ~/.config/navi: config/navi
     ~/.config/lf: config/lf
     ~/.config/sketchybar: config/sketchybar
+    ~/.config/amethyst/amethyst.yml: config/amethyst/amethyst.yml
+    ~/.func: config/zsh/func
     ~/.utils: utils
-    ~/.amethyst.yml: config/amethyst/amethyst.yml
 
 - brewfile:
     - Brewfile
@@ -49,14 +49,17 @@
         - 3.11.1
     - plugin: nodejs
       url: https://github.com/asdf-vm/asdf-nodejs.git
-      global: 18.6.0
+      global: 18.13.0
       versions:
         - 18.6.0
+        - 18.13.0
+        - 19.5.0
     - plugin: golang
       url: https://github.com/kennyp/asdf-golang.git
       global: 1.19.4
       versions:
         - 1.19.4
+        - 1.20
 
 - shell:
     - [bat cache --build, Rebuilding bat cache for custom theme]
