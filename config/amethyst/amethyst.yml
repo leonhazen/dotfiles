@@ -1,4 +1,4 @@
-# Use tall and fullscreen layouts
+# This feels like too many layouts but I like the options
 layouts:
     - two-pane
     - fullscreen
@@ -28,6 +28,11 @@ floating:
     - "com.tann.dice.desktop"
     - "com.philandro.anydesk"
     - "com.electron.moonitor"
+    - "app.scriptkit"
+
+select-two-pane-layout:
+    mod: mod1
+    key: c
 
 mouse-resizes-windows: true
 mouse-swaps-windows: true
@@ -36,5 +41,10 @@ mouse-swaps-windows: true
 window-margins: true
 window-margin-size: 10
 
+# Minimize oldest window when count is greater than this (per screen)
+window-max-count: 4
+
 # Top padding needed if using sketchybar
 # screen-padding-top: 45
+
+focus-follows-mouse: false
