@@ -1,4 +1,4 @@
-theme = "monokai_pro"
+theme = "sonokai"
 
 [editor.cursor-shape]
 insert = "bar"
