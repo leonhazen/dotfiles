@@ -8,7 +8,7 @@ env:
 
 window:
   decorations: buttonless
-  opacity: 0.9
+  opacity: 0.95
   startup_mode: Windowed
   dynamic_title: true
   history: 10000
