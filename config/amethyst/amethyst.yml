@@ -42,7 +42,7 @@ window-margins: true
 window-margin-size: 10
 
 # Minimize oldest window when count is greater than this (per screen)
-window-max-count: 4
+window-max-count: 0
 
 # Top padding needed if using sketchybar
 # screen-padding-top: 45
