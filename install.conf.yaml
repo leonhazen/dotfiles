@@ -64,3 +64,5 @@
 
 - shell:
     - [bat cache --build, Rebuilding bat cache for custom theme]
+    - [tldr --update, Update tldr database]
+    - [brew --cleanup, Cleanup outdated brew downloads]
