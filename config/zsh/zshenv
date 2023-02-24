@@ -13,16 +13,21 @@ fi
 # Add Rancher Desktop PATH
 export PATH=$PATH:~/.rd/bin
 
-# FZF defaults (catppuccin colours)
+# FZF defaults
 export FZF_DEFAULT_OPTS=" \
-  --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
-  --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
-  --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
-  --height 60% --layout=reverse --border"
+  --ansi --color=fg:#abb2bf,bg:#282c34,hl:#61afef \
+  --color=fg+:#d0d0d0,bg+:#464d5c,hl+:#9fd1f2 \
+  --color=info:#e5c07b,prompt:#e06c75,pointer:#c678dd \
+  --color=marker:#98c378,spinner:#c678dd,header:#56b6c2 \
+  --height 50% --layout=reverse --border --margin=2 --padding=1 \
+  --border=sharp --prompt='➤  ' --pointer='➤ ' --marker='➤ ' \
+  --preview='bat --style numbers --color=always {}' \
+  --bind='F1:toggle-preview'"
+
+export FZF_DEFAULT_COMMAND='fd . --type file --hidden --exclude ".git" --color=always'
 
 # navi widget and config. Widget gives ctrl+g shortcut
 export NAVI_CONFIG="$HOME/.config/navi/config.yaml"
-export NAVI_FZF_OVERRIDES='--height 80%'
 
 # Use bat as man pager - can use batman instead, but muscle memory usually wins
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
