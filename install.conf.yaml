@@ -60,7 +60,7 @@
       global: 1.19.4
       versions:
         - 1.19.4
-        - 1.20
+        - 1.20.1
 
 - shell:
     - [bat cache --build, Rebuilding bat cache for custom theme]
