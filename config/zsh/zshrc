@@ -54,3 +54,7 @@ if [ -x "$(command -v exa)" ]; then
     alias lta="exa --group-directories-first --icons --tree --all"
 fi
 
+# Alias docker to nerdctl
+if [ -x "$(command -v nerdctl)" ]; then
+    alias docker=nerdctl
+fi
