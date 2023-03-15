@@ -35,6 +35,7 @@
     ~/.config/amethyst/amethyst.yml: config/amethyst/amethyst.yml
     ~/.func: config/zsh/func
     ~/.utils: utils
+    ~/Library/KeyBindings/DefaultKeyBinding.dict: config/osx/DefaultKeyBinding.dict
 
 - brewfile:
     - Brewfile
