@@ -7,7 +7,6 @@ layouts:
     - row
     - wide
     - 3column-left
-    - middle-wide
     - 3column-right
     - floating
 
@@ -32,6 +31,14 @@ floating:
 
 select-two-pane-layout:
     mod: mod1
+    key: c
+
+command1:
+    mod: mod2
+    key: d
+
+command2:
+    mod: mod2
     key: c
 
 mouse-resizes-windows: true
