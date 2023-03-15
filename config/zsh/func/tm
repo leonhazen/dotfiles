@@ -1,7 +1,7 @@
 if [[ $# -eq 1 ]]; then
     sesh=$1
 else
-    sesh=$(tmux ls | fzf | cut -d: -f1)
+    sesh=$(tmux ls | fzf --delimiter=: --preview='tmux list-windows -t {1}' | cut -d: -f1)
 fi
 
 if [[ -z $sesh ]]; then
