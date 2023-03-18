@@ -1,6 +1,5 @@
 - defaults:
     link:
-        relink: true
         create: true
 
 - clean: ["~"]
@@ -33,6 +32,7 @@
     ~/.config/lf: config/lf
     ~/.config/sketchybar: config/sketchybar
     ~/.config/amethyst/amethyst.yml: config/amethyst/amethyst.yml
+    # ~/Library/Application Support/Arc/boosts: config/arc/boosts
     ~/.func: config/zsh/func
     ~/.utils: utils
     ~/Library/KeyBindings/DefaultKeyBinding.dict: config/osx/DefaultKeyBinding.dict

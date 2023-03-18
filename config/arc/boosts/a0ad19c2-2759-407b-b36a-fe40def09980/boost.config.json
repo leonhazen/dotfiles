@@ -1,0 +1,1 @@
+{"pinned":false,"id":"a0ad19c2-2759-407b-b36a-fe40def09980","scope":"www.imdb.com","installedInProfiles":[{"default":{}}],"extensionId":"monkikjfafbdnehjhhbeeejpgenlkdka","components":{"contentScript":{"path":"content.js","enabled":true}},"extensionEnabled":true,"name":"Add radar\/sonarr links to IMDb listings"}
