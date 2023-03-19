@@ -82,6 +82,10 @@ cask "vivaldi"
 cask "vlc"
 cask "visual-studio-code"
 
+# Flutter dev
+cask "flutter"
+cask "android-studio"
+
 # Fonts
 cask "font-hack-nerd-font"
 cask "font-inconsolata-for-powerline"
