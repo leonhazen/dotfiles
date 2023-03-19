@@ -13,6 +13,10 @@ fi
 # Add Rancher Desktop PATH
 export PATH=$PATH:~/.rd/bin
 
+# Add Android Studio PATH
+export PATH=$PATH:~/Library/Android/sdk/platform-tools
+export PATH=$PATH:~/Library/Android/sdk/cmdline-tools/bin
+
 # FZF defaults
 export FZF_DEFAULT_OPTS=" \
   --ansi --color=fg:#abb2bf,bg:#282c34,hl:#61afef \
