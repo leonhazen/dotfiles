@@ -17,6 +17,7 @@
     ~/.zlogin: config/zsh/zlogin
     ~/.zlogout: config/zsh/zlogout
     ~/.p10k.zsh: config/zsh/p10k.zsh
+    ~/.aliases.zsh: config/zsh/aliases.zsh
     ~/.hyper.js: config/hyper.js
     ~/.fzf.zsh: config/zsh/fzf.zsh
     ~/.tmux.conf: config/tmux/tmux.conf
