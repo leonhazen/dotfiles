@@ -1,70 +1,69 @@
 - defaults:
-    link:
-        create: true
+      link:
+          create: true
 
 - clean: ["~"]
 
 - create:
-    - ~/.config
+      - ~/.config
 
 - link:
-    ~/.gitconfig: config/gitconfig
-    ~/.prezto: prezto
-    ~/.zshrc: config/zsh/zshrc
-    ~/.zprofile: config/zsh/zprofile
-    ~/.zpreztorc: config/zsh/zpreztorc
-    ~/.zshenv: config/zsh/zshenv
-    ~/.zlogin: config/zsh/zlogin
-    ~/.zlogout: config/zsh/zlogout
-    ~/.p10k.zsh: config/zsh/p10k.zsh
-    ~/.aliases.zsh: config/zsh/aliases.zsh
-    ~/.hyper.js: config/hyper.js
-    ~/.fzf.zsh: config/zsh/fzf.zsh
-    ~/.tmux.conf: config/tmux/tmux.conf
-    ~/.config/bat: config/bat
-    ~/.config/linearmouse: config/linearmouse
-    ~/.config/nvim: config/nvim
-    ~/.config/helix: config/helix
-    ~/.config/alacritty: config/alacritty
-    ~/.config/htop: config/htop
-    ~/.config/bpytop: config/bpytop
-    ~/.config/neofetch: config/neofetch
-    ~/.config/navi: config/navi
-    ~/.config/lf: config/lf
-    ~/.config/sketchybar: config/sketchybar
-    ~/.config/amethyst/amethyst.yml: config/amethyst/amethyst.yml
-    # ~/Library/Application Support/Arc/boosts: config/arc/boosts
-    ~/.func: config/zsh/func
-    ~/.utils: utils
-    ~/Library/KeyBindings/DefaultKeyBinding.dict: config/osx/DefaultKeyBinding.dict
+      ~/.gitconfig: config/gitconfig
+      ~/.prezto: prezto
+      ~/.zshrc: config/zsh/zshrc
+      ~/.zprofile: config/zsh/zprofile
+      ~/.zpreztorc: config/zsh/zpreztorc
+      ~/.zshenv: config/zsh/zshenv
+      ~/.zlogin: config/zsh/zlogin
+      ~/.zlogout: config/zsh/zlogout
+      ~/.p10k.zsh: config/zsh/p10k.zsh
+      ~/.aliases.zsh: config/zsh/aliases.zsh
+      ~/.hyper.js: config/hyper.js
+      ~/.fzf.zsh: config/zsh/fzf.zsh
+      ~/.tmux.conf: config/tmux/tmux.conf
+      ~/.config/bat: config/bat
+      ~/.config/linearmouse: config/linearmouse
+      ~/.config/nvim: config/nvim
+      ~/.config/helix: config/helix
+      ~/.config/alacritty: config/alacritty
+      ~/.config/htop: config/htop
+      ~/.config/bpytop: config/bpytop
+      ~/.config/neofetch: config/neofetch
+      ~/.config/navi: config/navi
+      ~/.config/lf: config/lf
+      ~/.config/sketchybar: config/sketchybar
+      ~/.config/amethyst/amethyst.yml: config/amethyst/amethyst.yml
+      # ~/Library/Application Support/Arc/boosts: config/arc/boosts
+      ~/.utils: utils
+      ~/Library/KeyBindings/DefaultKeyBinding.dict: config/osx/DefaultKeyBinding.dict
 
 - brewfile:
-    - Brewfile
+      - Brewfile
 
 - asdf:
-    - asdf_path: /usr/local/opt/asdf/libexec/asdf.sh
-    - plugin: python
-      url: https://github.com/tuvistavie/asdf-python.git
-      global: 3.11.1
-      versions:
-        - 3.7.14
-        - 3.9.13
-        - 3.11.1
-    - plugin: nodejs
-      url: https://github.com/asdf-vm/asdf-nodejs.git
-      global: 18.13.0
-      versions:
-        - 18.6.0
-        - 18.13.0
-        - 19.5.0
-    - plugin: golang
-      url: https://github.com/kennyp/asdf-golang.git
-      global: 1.20.2
-      versions:
-        - 1.19.7
-        - 1.20.2
+      - asdf_path: /usr/local/opt/asdf/libexec/asdf.sh
+      - plugin: python
+        url: https://github.com/tuvistavie/asdf-python.git
+        global: 3.11.1
+        versions:
+            - 3.7.14
+            - 3.9.13
+            - 3.11.1
+      - plugin: nodejs
+        url: https://github.com/asdf-vm/asdf-nodejs.git
+        global: 18.13.0
+        versions:
+            - 18.6.0
+            - 18.13.0
+            - 19.5.0
+      - plugin: golang
+        url: https://github.com/kennyp/asdf-golang.git
+        global: 1.20.2
+        versions:
+            - 1.19.7
+            - 1.20.2
 
 - shell:
-    - [bat cache --build, Rebuilding bat cache for custom theme]
-    - [tldr --update, Update tldr database]
-    - [brew cleanup, Cleanup outdated brew downloads]
+      - [bat cache --build, Rebuilding bat cache for custom theme]
+      - [tldr --update, Update tldr database]
+      - [brew cleanup, Cleanup outdated brew downloads]
