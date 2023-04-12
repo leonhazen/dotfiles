@@ -28,6 +28,7 @@ floating:
     - "com.philandro.anydesk"
     - "com.electron.moonitor"
     - "app.scriptkit"
+    - "us.zoom.xos"
 
 select-two-pane-layout:
     mod: mod1
