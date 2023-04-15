@@ -20,6 +20,7 @@ mod2:
 
 floating:
     - "com.apple.systempreferences"
+    - "com.apple.calculator"
     - "org.videolan.vlc"
     - "com.valvesoftware.steam"
     - "com.teamviewer.TeamViewer"
