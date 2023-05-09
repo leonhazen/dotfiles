@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/leonhazen/dotfiles.git ~/.dotfiles
+git clone git@github.com:leonhazen/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 git submodule --recursive --init
 ./install
