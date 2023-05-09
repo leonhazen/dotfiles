@@ -1,10 +1,10 @@
 tap "charmbracelet/tap"
-tap "fluxcd/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
-tap "ferdium/ferdium"
+tap "eth-p/software/bat-extras"
+tap "go-task/tap"
 
 # CLI apps
 brew "asdf"
@@ -24,7 +24,6 @@ brew "duf"
 brew "eth-p/software/bat-extras"
 brew "exa"
 brew "fd"
-brew "flux"
 brew "fzf"
 brew "go-task/tap/go-task"
 brew "gh"
@@ -62,10 +61,8 @@ cask "alt-tab"
 cask "amethyst"
 cask "authy"
 cask "bartender"
-cask "brave-browser"
 cask "cron"
 cask "dash"
-cask "ferdium"
 cask "figma"
 cask "firefox"
 cask "gimp"
@@ -80,7 +77,6 @@ cask "rancher"
 cask "raycast"
 cask "shottr"
 cask "ticktick"
-cask "vivaldi"
 cask "vlc"
 cask "visual-studio-code"
 
@@ -102,7 +98,6 @@ mas "Friendly Streaming", id: 553245401
 mas "Gestimer", id: 990588172
 mas "Kindle", id: 405399194
 mas "Microsoft Remote Desktop", id: 1295203466
-mas "Parcel", id: 639968404
 mas "Tailscale", id: 1475387142
 mas "ToothFairy", id: 1191449274
 mas "Trello", id: 1278508951
