@@ -10,6 +10,7 @@
 - link:
       ~/.gitconfig: config/gitconfig
       ~/.zprezto: prezto
+      ~/.zprezto/contrib: config/zsh/contrib
       ~/.zshrc: config/zsh/zshrc
       ~/.zprofile: config/zsh/zprofile
       ~/.zpreztorc: config/zsh/zpreztorc
