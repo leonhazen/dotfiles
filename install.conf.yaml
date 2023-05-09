@@ -9,7 +9,7 @@
 
 - link:
       ~/.gitconfig: config/gitconfig
-      ~/.prezto: prezto
+      ~/.zprezto: prezto
       ~/.zshrc: config/zsh/zshrc
       ~/.zprofile: config/zsh/zprofile
       ~/.zpreztorc: config/zsh/zpreztorc
