@@ -5,7 +5,7 @@
 ```bash
 git clone git@github.com:leonhazen/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-git submodule --recursive --init
+git submodule update --recursive --init
 ./install
 ```
 
