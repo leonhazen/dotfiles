@@ -1,5 +1,14 @@
 # Leon's dotfiles
 
+## Prerequisites
+1. [Homebrew](https://brew.sh/)
+
+    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+2. git SSH key created and added to github account
+    1. `ssh-keygen -t ed25519 -C "your_email@example.com"`
+    2. Copy from `~/.ssh/id_ed25519.pub` into https://github.com/settings/ssh/new
+
 ## Installation
 
 ```bash
@@ -8,6 +17,9 @@ cd ~/.dotfiles
 git submodule update --recursive --init
 ./install
 ```
+
+For tmux, launch tmux and ctrl+A I to install TPM plugins. 
+>If your username (or more to the point, your HOME path) has a space in it, this seems to break the TPM install hotkey working, instead you can manually run `~/.tmux/plugins/tpm/bin/install_plugins`.
 
 ### Updating Dotbot
 
