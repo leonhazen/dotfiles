@@ -2,15 +2,9 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "prezto"]
-	path = prezto
-	url = https://github.com/sorin-ionescu/prezto.git
 [submodule "dotbot-brew"]
 	path = dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
 [submodule "dotbot-asdf"]
 	path = dotbot-asdf
 	url = https://github.com/sobolevn/dotbot-asdf.git
-[submodule "config/zsh/contrib/kube-aliases"]
-	path = config/zsh/contrib/kube-aliases
-	url = https://github.com/Dbz/kube-aliases

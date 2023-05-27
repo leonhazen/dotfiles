@@ -9,16 +9,17 @@
 
 - link:
       ~/.gitconfig: config/gitconfig
-      ~/.zprezto: prezto
-      ~/.zprezto/contrib: config/zsh/contrib
-      ~/.zshrc: config/zsh/zshrc
-      ~/.zprofile: config/zsh/zprofile
-      ~/.zpreztorc: config/zsh/zpreztorc
-      ~/.zshenv: config/zsh/zshenv
-      ~/.zlogin: config/zsh/zlogin
-      ~/.zlogout: config/zsh/zlogout
-      ~/.p10k.zsh: config/zsh/p10k.zsh
-      ~/.aliases.zsh: config/zsh/aliases.zsh
+      ~/.zshenv: config/zsh/.zshenv
+      ~/.config/zsh: config/zsh
+      # ~/.zprezto: prezto
+      # ~/.zprezto/contrib: config/zsh/contrib
+      # ~/.zshrc: config/zsh/zshrc
+      # ~/.zprofile: config/zsh/zprofile
+      # ~/.zpreztorc: config/zsh/zpreztorc
+      # ~/.zlogin: config/zsh/zlogin
+      # ~/.zlogout: config/zsh/zlogout
+      # ~/.p10k.zsh: config/zsh/p10k.zsh
+      # ~/.aliases.zsh: config/zsh/aliases.zsh
       ~/.fzf.zsh: config/zsh/fzf.zsh
       ~/.tmux.conf: config/tmux/tmux.conf
       ~/.config/bat: config/bat

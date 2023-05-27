@@ -8,10 +8,23 @@ if [ -x "$(command -v exa)" ]; then
     alias lta="exa --group-directories-first --icons --tree --all"
 fi
 
-# Alias docker to nerdctl
-if [ -x "$(command -v nerdctl)" ]; then
+# nerdctl replaces docker if installed
+if [ -x "$(command -v nerdctl)" ] && [ "$USE_NERDCTL" = "1" ]; then
     alias docker=nerdctl
 fi
+
+# directory aliases
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias _='sudo'
+
+alias pbc='pbcopy'
+alias df='df -kh'
+alias du='du -kh'
 
 # terraform aliases
 if [ -x "$(command -v terraform)" ]; then
@@ -29,6 +42,22 @@ if [ -x "$(command -v terraform)" ]; then
     alias tfwd="terraform workspace delete"
 fi
 
+# git
+alias g="git"
+alias gs="git status"
+alias ga="git add"
+alias gp="git push"
+alias gpo="git push origin"
+alias gpl="git pull"
+alias gb="git branch"
+alias gl="git log"
+alias glg="git log --graph --oneline --decorate --all"
+alias glo="git log --oneline --decorate --all"
+alias gll="git log --graph --oneline --decorate --all --stat"
+alias gd="git diff"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+
 # git commit helper (requires gum)
 # calls /utils/git-commit.sh
 if [ -x "$(command -v gum)" ]; then
@@ -44,3 +73,26 @@ fi
 if [ -x "$(command -v code-insiders)" ] && [ "$USE_VSCODE_INSIDERS" = "1" ]; then
     alias code="code-insiders"
 fi
+
+# kubernetes
+alias k="kubectl"
+alias kg="kubectl get"
+alias kga="kubectl get --all-namespaces"
+alias kgp="kubectl get pods"
+alias kgs="kubectl get services"
+alias kgn="kubectl get nodes"
+alias kgd="kubectl get deployments"
+alias kgj="kubectl get jobs"
+alias kd="kubectl describe"
+alias kdp="kubectl describe pod"
+alias kdn="kubectl describe node"
+alias kdd="kubectl describe deployment"
+alias kds="kubectl describe service"
+alias kdj="kubectl describe job"
+alias krm="kubectl delete"
+alias kl="kubectl logs"
+alias klf="kubectl logs -f"
+alias keit="kubectl exec -it"
+alias kaf="kubectl apply -f"
+alias kctx="kubectx"
+alias kns="kubens"
