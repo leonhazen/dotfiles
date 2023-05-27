@@ -18,25 +18,26 @@ git submodule update --recursive --init
 ./install
 ```
 
-For tmux, launch tmux and ctrl+A I to install TPM plugins. 
->If your username (or more to the point, your HOME path) has a space in it, this seems to break the TPM install hotkey working, instead you can manually run `~/.tmux/plugins/tpm/bin/install_plugins`.
+## App specific config
 
-### Updating Dotbot
+### tmux
+tmux plugins are installed via TPM. Launch tmux and ctrl+A I to install TPM plugins. 
 
-In short, dotbot submodule can be updated with `git submodule update --remote dotbot`. Make sure to commit, and then run `./install` again.
+### VSCode
 
-See https://github.com/anishathalye/dotbot for more info.
+VS Code config is synced via the built-in sync function. This is using my github account for auth. Currently both insiders and standard are syncing with the standard core profile.
 
-## VS Code
+### asdf
 
-VS Code config is synced via the built-in sync function. This is using my github account for auth.
+Includes [asdf](https://asdf-vm.com/) for managing runtime versions. 
 
-## asdf
+Versions to install and global setting are configured in `install.conf.yaml` but can be managed directly using `asdf`.
 
-Includes [asdf](https://asdf-vm.com/) for managing runtime versions. Use `asdf install python <version>` or `asdf install nodejs latest` to install runtimes.
+Use `asdf install python <version>` or `asdf install nodejs latest` to install runtimes, and `asdf global golang <version>` to specify global versions. 
 
-## Troubleshooting
+When installing/switching versions, you probably want to run `asdf reshim <language>`
 
+#### asdf troubleshooting
 If ./install (or other sources) return errors about runtimes managed by 'asdf' like the below: 
 
 ```
@@ -50,3 +51,20 @@ This can be caused by homebrew upgrades of asdf breaking the currently linked sh
 rm ~/.asdf/shims/*
 asdf reshim
 ```
+
+## Useful aliases/functions
+
+`keychain.sh [set|get] [key]` - store secrets in OSX keychain, useful for populating env vars like `export ENV_VAR_NAME=$(keychain.sh get ENV_VAR_NAME)`
+
+`ath` - function to switch Alacritty theme
+
+`gig` - gitignore helper function
+
+`tm` - tmux session helper function
+
+## Updating Dotbot
+
+In short, dotbot submodule can be updated with `git submodule update --remote dotbot`. Make sure to commit, and then run `./install` again.
+
+See https://github.com/anishathalye/dotbot for more info.
+
