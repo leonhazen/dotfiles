@@ -28,3 +28,14 @@ if [ -x "$(command -v terraform)" ]; then
     alias tfwp="terraform workspace new"
     alias tfwd="terraform workspace delete"
 fi
+
+# git commit helper (requires gum)
+# calls /utils/git-commit.sh
+if [ -x "$(command -v gum)" ]; then
+    alias gcm="git-commit.sh"
+fi
+
+# lazygit
+if [ -x "$(command -v lazygit)" ]; then
+    alias lg="lazygit"
+fi

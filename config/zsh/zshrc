@@ -41,11 +41,11 @@ eval "$(navi widget zsh)"
 export GOPATH=$(go env GOPATH)
 export GOROOT=$(go env GOROOT)
 export GOBIN=$(go env GOBIN)
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
-export PATH=$PATH:$GOBIN
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:$GOBIN
 
+# my aliases
 source_if_exists ~/.aliases.zsh
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/leon/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/leon/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
