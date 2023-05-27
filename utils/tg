@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # Attempting to use Charm's gum to do the same thing as the simple function using fzf does in tm.
 # This is a work in progress. It's working, but ugly.
