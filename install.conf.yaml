@@ -17,6 +17,7 @@
       ~/.config/amethyst: config/amethyst
       ~/.config/bat: config/bat
       ~/.config/bpytop: config/bpytop
+      ~/.config/delta: config/delta
       ~/.config/helix: config/helix
       ~/.config/htop: config/htop
       ~/.config/lazygit: config/lazygit

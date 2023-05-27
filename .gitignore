@@ -87,3 +87,6 @@ packer_compiled.lua
 
 # tmux resurrect points
 **/tmux/resurrect/*
+
+**/tmux/plugins
+**/zsh/plugins
