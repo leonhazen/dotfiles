@@ -22,6 +22,7 @@
       ~/.fzf.zsh: config/zsh/fzf.zsh
       ~/.tmux.conf: config/tmux/tmux.conf
       ~/.config/bat: config/bat
+      ~/.config/lazygit: config/lazygit
       ~/.config/linearmouse: config/linearmouse
       ~/.config/nvim: config/nvim
       ~/.config/helix: config/helix
@@ -31,7 +32,7 @@
       ~/.config/neofetch: config/neofetch
       ~/.config/navi: config/navi
       ~/.config/lf: config/lf
-      ~/.config/amethyst/amethyst.yml: config/amethyst/amethyst.yml
+      ~/.config/amethyst: config/amethyst
       # ~/Library/Application Support/Arc/boosts: config/arc/boosts
       ~/.utils: utils
       ~/Library/KeyBindings/DefaultKeyBinding.dict: config/osx/DefaultKeyBinding.dict
