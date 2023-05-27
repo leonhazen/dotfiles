@@ -39,11 +39,7 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/homebrew,macos
 
-# neovim packer
-config/nvim/plugin/packer_compiled.lua
 
-# tmux resurrect points
-config/tmux/resurrect/*
 
 *.log
 
@@ -82,3 +78,12 @@ zsdoc/data
 # Zunit tests' output
 /tests/_output/*
 !/tests/_output/.gitkeep
+
+# lazygit state
+**/lazygit/state.yml
+
+# neovim packer
+packer_compiled.lua
+
+# tmux resurrect points
+**/tmux/resurrect/*
