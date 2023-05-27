@@ -19,7 +19,6 @@
       ~/.zlogout: config/zsh/zlogout
       ~/.p10k.zsh: config/zsh/p10k.zsh
       ~/.aliases.zsh: config/zsh/aliases.zsh
-      ~/.hyper.js: config/hyper.js
       ~/.fzf.zsh: config/zsh/fzf.zsh
       ~/.tmux.conf: config/tmux/tmux.conf
       ~/.config/bat: config/bat
@@ -32,7 +31,6 @@
       ~/.config/neofetch: config/neofetch
       ~/.config/navi: config/navi
       ~/.config/lf: config/lf
-      ~/.config/sketchybar: config/sketchybar
       ~/.config/amethyst/amethyst.yml: config/amethyst/amethyst.yml
       # ~/Library/Application Support/Arc/boosts: config/arc/boosts
       ~/.utils: utils
