@@ -43,6 +43,9 @@ export GOROOT=$(go env GOROOT)
 export GOBIN=$(go env GOBIN)
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:$GOBIN
 
+# determines if code should be aliased to code-insiders
+export USE_VSCODE_INSIDERS=1
+
 # my aliases
 source_if_exists ~/.aliases.zsh
 

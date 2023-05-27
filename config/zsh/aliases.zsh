@@ -39,3 +39,8 @@ fi
 if [ -x "$(command -v lazygit)" ]; then
     alias lg="lazygit"
 fi
+
+# alias code to code-insiders if it exists and USE_VSCODE_INSIDERS is set to 1
+if [ -x "$(command -v code-insiders)" ] && [ "$USE_VSCODE_INSIDERS" = "1" ]; then
+    alias code="code-insiders"
+fi
