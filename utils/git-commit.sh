@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
+# Uses charmbracelet gum to help write git commit messages in conventional commit's style
+
 TYPE=$(gum choose "fix" "feat" "docs" "chore" "refactor" "test" "style" "revert")
 SCOPE=$(gum input --placeholder "scope")
 

@@ -43,6 +43,8 @@ export GOROOT=$(go env GOROOT)
 export GOBIN=$(go env GOBIN)
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin:$GOBIN
 
+export OPENAI_API_KEY=$(keychain.sh get OPENAI_API_KEY)
+
 # determines if code should be aliased to code-insiders
 export USE_VSCODE_INSIDERS=1
 
