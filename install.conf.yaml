@@ -11,31 +11,20 @@
       ~/.gitconfig: config/gitconfig
       ~/.zshenv: config/zsh/.zshenv
       ~/.config/zsh: config/zsh
-      # ~/.zprezto: prezto
-      # ~/.zprezto/contrib: config/zsh/contrib
-      # ~/.zshrc: config/zsh/zshrc
-      # ~/.zprofile: config/zsh/zprofile
-      # ~/.zpreztorc: config/zsh/zpreztorc
-      # ~/.zlogin: config/zsh/zlogin
-      # ~/.zlogout: config/zsh/zlogout
-      # ~/.p10k.zsh: config/zsh/p10k.zsh
-      # ~/.aliases.zsh: config/zsh/aliases.zsh
-      ~/.fzf.zsh: config/zsh/fzf.zsh
       ~/.tmux.conf: config/tmux/tmux.conf
-      ~/.config/bat: config/bat
-      ~/.config/lazygit: config/lazygit
-      ~/.config/linearmouse: config/linearmouse
-      ~/.config/nvim: config/nvim
-      ~/.config/helix: config/helix
-      ~/.config/alacritty: config/alacritty
-      ~/.config/htop: config/htop
-      ~/.config/bpytop: config/bpytop
-      ~/.config/neofetch: config/neofetch
-      ~/.config/navi: config/navi
-      ~/.config/lf: config/lf
-      ~/.config/amethyst: config/amethyst
-      # ~/Library/Application Support/Arc/boosts: config/arc/boosts
       ~/.utils: utils
+      ~/.config/alacritty: config/alacritty
+      ~/.config/amethyst: config/amethyst
+      ~/.config/bat: config/bat
+      ~/.config/bpytop: config/bpytop
+      ~/.config/helix: config/helix
+      ~/.config/htop: config/htop
+      ~/.config/lazygit: config/lazygit
+      ~/.config/lf: config/lf
+      ~/.config/linearmouse: config/linearmouse
+      ~/.config/navi: config/navi
+      ~/.config/neofetch: config/neofetch
+      ~/.config/nvim: config/nvim
       ~/Library/KeyBindings/DefaultKeyBinding.dict: config/osx/DefaultKeyBinding.dict
       ~/.default-python-packages: config/python/default-python-packages
       ~/.default-npm-packages: config/nodejs/default-npm-packages

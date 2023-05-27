@@ -69,17 +69,19 @@ export PATH=$PATH:~/Library/Android/sdk/cmdline-tools/bin
 # Poetry PATH
 export PATH=$PATH:~/.local/bin
 
+# Get private env vars from OSX keychain
 export OPENAI_API_KEY=$(keychain.sh get OPENAI_API_KEY)
 
 # Options for alias mappings
 export USE_VSCODE_INSIDERS=1
 export USE_NERDCTL=1
 
+# Install and load zsh plugins
 plugin_repos=(
     romkatv/powerlevel10k
-    zsh-users/zsh-syntax-highlighting
     zsh-users/zsh-history-substring-search
     zsh-users/zsh-autosuggestions
+    zsh-users/zsh-syntax-highlighting
 )
 
 plugin-load $plugin_repos
