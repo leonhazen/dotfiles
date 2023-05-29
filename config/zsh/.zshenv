@@ -23,7 +23,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 
 export EDITOR='nvim'
-export VISUAL='nvim'
+export VISUAL='code'
 export PAGER='moar'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 

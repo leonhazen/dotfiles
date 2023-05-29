@@ -4,7 +4,7 @@
 
 # If not enough arguments are provided, then show usage
 if [ $# -lt 2 ]; then
-    echo "Usage: keychain.sh [get|set] [key]"
+    echo "Usage: $(basename -- ${0}) [get|set] [key]"
     exit 1
 fi
 
@@ -33,3 +33,7 @@ if [ "$1" = "set" ]; then
     security add-generic-password -U -a ${USER} -s "${2}" -w "${secret}"
     exit 0
 fi
+
+# If the first argument is not "get" or "set", then show usage
+echo "Usage: $(basename -- ${0}) [get|set] [key]"
+exit 1

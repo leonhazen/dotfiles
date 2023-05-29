@@ -1,4 +1,3 @@
-
 # ls/exa aliases
 if [ -x "$(command -v exa)" ]; then
     alias ls="exa --group-directories-first --classify"
@@ -6,11 +5,6 @@ if [ -x "$(command -v exa)" ]; then
     alias la="exa --group-directories-first --classify --icons --header --git --long --all"
     alias lt="exa --group-directories-first --icons --tree"
     alias lta="exa --group-directories-first --icons --tree --all"
-fi
-
-# nerdctl replaces docker if installed
-if [ -x "$(command -v nerdctl)" ] && [ "$USE_NERDCTL" = "1" ]; then
-    alias docker=nerdctl
 fi
 
 # directory aliases
@@ -21,10 +15,18 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 alias _='sudo'
+alias ffs='sudo !!'
 
 alias pbc='pbcopy'
 alias df='df -kh'
 alias du='du -kh'
+
+alias ag="alias | grep "
+alias t="htop"
+
+alias nv="nvim"
+
+alias myip="curl https://ip.le.onl | jq '.ip' | tr -d '\"'"
 
 # terraform aliases
 if [ -x "$(command -v terraform)" ]; then
@@ -57,6 +59,10 @@ alias gll="git log --graph --oneline --decorate --all --stat"
 alias gd="git diff"
 alias gco="git checkout"
 alias gcob="git checkout -b"
+alias gc="git clone"
+
+# suffix alias to allow you to just paste a repo link and it will clone it
+alias -s git="git clone --depth 1"
 
 # git commit helper (requires gum)
 # calls /utils/git-commit.sh
