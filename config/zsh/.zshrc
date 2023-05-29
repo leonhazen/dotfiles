@@ -41,10 +41,6 @@ eval $(thefuck --alias)
 export NAVI_CONFIG="$HOME/.config/navi/config.yaml"
 eval "$(navi widget zsh)"
 
-# asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
-. ~/.asdf/plugins/golang/set-env.zsh
-
 # Start ssh-agent if it's not running
 if [ $(ps ax | grep "[s]sh-agent" | wc -l) -eq 0 ] ; then
     eval $(ssh-agent -s) > /dev/null
@@ -59,6 +55,8 @@ fi
 export PATH=$PATH:~/Library/Android/sdk/platform-tools      # android studio
 export PATH=$PATH:~/Library/Android/sdk/cmdline-tools/bin   # android studio
 export PATH=$PATH:~/.local/bin                              # poetry
+export GOPATH=$HOME/go                                      # go
+export PATH=$PATH:$(go env GOPATH)/bin                      # go
 
 ##### my custom bits
 # my scripts
@@ -75,7 +73,6 @@ source_if_exists $ZDOTDIR/aliases.zsh
 
 # my functions
 source_if_exists $ZDOTDIR/functions.zsh
-
 
 # install and load zsh plugins
 plugin_repos=(
