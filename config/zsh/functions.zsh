@@ -81,7 +81,14 @@ tm() {
     if [[ $# -eq 1 ]]; then
         sesh=$1
     else
-        sesh=$(tmux ls | fzf --delimiter=: --preview='tmux list-windows -t {1}' | cut -d: -f1)
+        # List tmux sessions, including preview of windows in each session
+        # Select session or F9 to kill selected session
+        sesh=$(tmux ls \
+        | fzf --delimiter=: --preview='tmux list-windows -t {1}' \
+            --bind='f9:execute(tmux kill-session -t {1})' \
+            --bind='f9:+reload(tmux ls)' \
+            --prompt='Select session or F9 to kill: ' \
+        | cut -d: -f1)
     fi
 
     if [[ -z $sesh ]]; then

@@ -11,12 +11,11 @@ export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export DOTFILES="$HOME/.dotfiles"
 
-export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
-export HISTSIZE=10000                   # Maximum events for internal history
-export SAVEHIST=10000                   # Maximum events in history file
-export HISTDUP=erase                    # Erase duplicates in history file
-export HISTCONTROL=ignoreboth           # Ignore duplicates and commands starting with space
-
+export HISTFILE="$ZDOTDIR/.zhistory" # History filepath
+export HISTSIZE=10000                # Maximum events for internal history
+export SAVEHIST=10000                # Maximum events in history file
+export HISTDUP=erase                 # Erase duplicates in history file
+export HISTCONTROL=ignoreboth        # Ignore duplicates and commands starting with space
 
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
@@ -25,6 +24,7 @@ fi
 export EDITOR='nvim'
 export VISUAL='code'
 export PAGER='moar'
+export MOAR='--style=dracula --statusbar=bold'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 if [[ -z "$LANG" ]]; then

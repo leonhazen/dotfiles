@@ -9,10 +9,17 @@ fi
 
 # directory aliases
 alias d='dirs -v'
-for index ({1..9}) alias "$index"="cd +${index}"; unset index
+for index in {1..9}; do
+    alias "$index"="cd +${index}"
+    unset index
+done
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias dot='cd ~/.dotfiles'
+
+alias zs='source $XDG_CONFIG_HOME/zsh/.zshrc'
 
 alias _='sudo'
 alias ffs='sudo !!'
@@ -23,10 +30,11 @@ alias du='du -kh'
 
 alias ag="alias | grep "
 alias t="htop"
+alias tl="tail -f ${1} | bat --paging=never -l log"
 
 alias nv="nvim"
 
-alias myip="curl https://ip.le.onl | jq '.ip' | tr -d '\"'"
+alias myip="curl https://ip.le.onl -s | jq '.ip' | tr -d '\"'"
 
 # terraform aliases
 if [ -x "$(command -v terraform)" ]; then
@@ -36,7 +44,7 @@ if [ -x "$(command -v terraform)" ]; then
     alias tfd="terraform destroy"
     alias tfa="terraform apply"
     alias tfv="terraform validate"
-    
+
     alias tfw="terraform workspace"
     alias tfws="terraform workspace select"
     alias tfwl="terraform workspace list"
@@ -105,4 +113,3 @@ alias kns="kubens"
 
 # aws profile picker
 alias awsp="source _aws_profile_picker"
-
