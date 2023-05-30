@@ -1,0 +1,42 @@
+#!/usr/bin/env sh
+
+# Get the current date/time
+current_date=$(date -u +"%Y-%m-%dT%H:%M:%S")
+
+# Initialize an empty string to hold our profiles
+profiles=""
+
+# Parse the AWS credentials file
+while IFS= read -r line; do
+  if [[ "${line:0:1}" == "[" ]]; then
+    # This is a profile name
+    profile_name=$(echo $line | tr -d '[]')
+    profiles="$profiles\n$profile_name"
+  elif [[ $line =~ ^x_security_token_expires.*$ ]]; then
+    # This is a token expiry
+    expiry_date=$(echo $line | cut -d' ' -f3)
+    # Calculate the difference in time from now
+    difference=$(datediff $current_date $expiry_date -f '%H:%M:%S')
+    if [[ $difference =~ ^-.*$ ]]; then
+      difference="expired"
+    fi
+    # Append this profile to our list of profiles
+    echo "Profile $profile_name expires in $difference"
+    profiles="$profiles ($difference)"
+  fi
+done < ~/.aws/credentials
+
+# Remove the newline character from the beginning of the profiles variable
+profiles="${profiles#\\n}"
+
+# Use fzf to select a profile
+selected_profile=$(echo "$profiles" | fzf --no-preview --height 20 --layout reverse --prompt "Select a profile: ")
+
+# If a profile is selected, export it
+if [ -n "$selected_profile" ]; then
+  echo "Selected profile: $selected_profile"
+  selected_profile=${selected_profile%% (*)}
+  export AWS_PROFILE=$selected_profile
+else
+  echo "No profile selected."
+fi

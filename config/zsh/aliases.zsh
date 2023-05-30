@@ -102,3 +102,7 @@ alias keit="kubectl exec -it"
 alias kaf="kubectl apply -f"
 alias kctx="kubectx"
 alias kns="kubens"
+
+# aws profile picker
+alias awsp="source _aws_profile_picker"
+
