@@ -8,7 +8,7 @@ if [ -x "$(command -v exa)" ]; then
 fi
 
 # directory aliases
-alias d='dirs -v'
+alias c='dirs -v'
 for index in {1..9}; do
     alias "$index"="cd +${index}"
     unset index
@@ -36,21 +36,18 @@ alias nv="nvim"
 
 alias myip="curl https://ip.le.onl -s | jq '.ip' | tr -d '\"'"
 
-# terraform aliases
-if [ -x "$(command -v terraform)" ]; then
-    alias tf="terraform"
-    alias tfp="terraform plan"
-    alias tfi="terraform init"
-    alias tfd="terraform destroy"
-    alias tfa="terraform apply"
-    alias tfv="terraform validate"
+alias tf="terraform"
+alias tfp="terraform plan"
+alias tfi="terraform init"
+alias tfd="terraform destroy"
+alias tfa="terraform apply"
+alias tfv="terraform validate"
 
-    alias tfw="terraform workspace"
-    alias tfws="terraform workspace select"
-    alias tfwl="terraform workspace list"
-    alias tfwp="terraform workspace new"
-    alias tfwd="terraform workspace delete"
-fi
+alias tfw="terraform workspace"
+alias tfws="terraform workspace select"
+alias tfwl="terraform workspace list"
+alias tfwp="terraform workspace new"
+alias tfwd="terraform workspace delete"
 
 # git
 alias g="git"
@@ -74,17 +71,13 @@ alias -s git="git clone --depth 1"
 
 # git commit helper (requires gum)
 # calls /utils/git-commit.sh
-if [ -x "$(command -v gum)" ]; then
-    alias gcm="git-commit.sh"
-fi
+alias gcm="git-commit.sh"
 
 # lazygit
-if [ -x "$(command -v lazygit)" ]; then
-    alias lg="lazygit"
-fi
+alias lg="lazygit"
 
 # alias code to code-insiders if it exists and USE_VSCODE_INSIDERS is set to 1
-if [ -x "$(command -v code-insiders)" ] && [ "$USE_VSCODE_INSIDERS" = "1" ]; then
+if [ "$USE_VSCODE_INSIDERS" = "1" ]; then
     alias code="code-insiders"
 fi
 
@@ -113,3 +106,22 @@ alias kns="kubens"
 
 # aws profile picker
 alias awsp="source _aws_profile_picker"
+
+# docker
+alias d="docker"
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias di="docker images"
+alias dcls="docker container ls"
+alias dclsa="docker container ls -a"
+alias dce="docker container exec -it"
+alias dcr="docker container run -it"
+alias drm="docker rm"
+alias dc="docker-compose"
+alias dce="docker-compose exec"
+alias dcr="docker-compose run"
+alias dcb="docker-compose build"
+alias dcd="docker-compose down"
+alias dcl="docker-compose logs"
+alias dclf="docker-compose logs -f"
+alias dcp="docker-compose ps"
