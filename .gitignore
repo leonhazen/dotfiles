@@ -13,7 +13,6 @@ Brewfile.lock.json
 # Icon must end with two \r
 Icon
 
-
 # Thumbnails
 ._*
 
@@ -38,8 +37,6 @@ Temporary Items
 *.icloud
 
 # End of https://www.toptal.com/developers/gitignore/api/homebrew,macos
-
-
 
 *.log
 
@@ -84,6 +81,9 @@ zsdoc/data
 
 # neovim packer
 packer_compiled.lua
+
+# neovim lazy packages
+config/nvim/lazy-lock.json
 
 # tmux resurrect points
 **/tmux/resurrect/*
