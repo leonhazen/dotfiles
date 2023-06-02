@@ -65,7 +65,7 @@ brew "tree"
 brew "wget"
 brew "yt-dlp"
 brew "yq"
-brew "zsh"
+brew "z"
 
 # Casks (GUI Apps)
 cask "alacritty"

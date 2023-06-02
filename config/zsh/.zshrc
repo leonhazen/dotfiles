@@ -41,6 +41,9 @@ eval $(thefuck --alias)
 export NAVI_CONFIG="$HOME/.config/navi/config.yaml"
 eval "$(navi widget zsh)"
 
+# init 'z'
+source_if_exists /usr/local/etc/profile.d/z.sh
+
 # Start ssh-agent if it's not running
 if [ $(ps ax | grep "[s]sh-agent" | wc -l) -eq 0 ] ; then
     eval $(ssh-agent -s) > /dev/null
