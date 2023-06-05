@@ -27,31 +27,6 @@ tmux plugins are installed via TPM. Launch tmux and ctrl+A I to install TPM plug
 
 VS Code config is synced via the built-in sync function. This is using my github account for auth. Currently both insiders and standard are syncing with the standard core profile.
 
-### asdf
-
-Includes [asdf](https://asdf-vm.com/) for managing runtime versions. 
-
-Versions to install and global setting are configured in `install.conf.yaml` but can be managed directly using `asdf`.
-
-Use `asdf install python <version>` or `asdf install nodejs latest` to install runtimes, and `asdf global golang <version>` to specify global versions. 
-
-When installing/switching versions, you probably want to run `asdf reshim <language>`
-
-#### asdf troubleshooting
-If ./install (or other sources) return errors about runtimes managed by 'asdf' like the below: 
-
-```
-/Users/leon/.asdf/shims/python: line 6: /usr/local/Cellar/asdf/0.10.2/libexec/bin/asdf: No such file or directory
-/Users/leon/.asdf/shims/python: line 6: exec: /usr/local/Cellar/asdf/0.10.2/libexec/bin/asdf: cannot execute: No such file or directory
-```
-
-This can be caused by homebrew upgrades of asdf breaking the currently linked shims. You can force asdf to recreate all your shims with their correct paths with the below:
-
-```sh
-rm ~/.asdf/shims/*
-asdf reshim
-```
-
 ## Useful aliases/functions
 
 `keychain.sh [set|get] [key]` - store secrets in OSX keychain, useful for populating env vars like `export ENV_VAR_NAME=$(keychain.sh get ENV_VAR_NAME)`
