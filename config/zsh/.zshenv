@@ -23,8 +23,8 @@ fi
 
 export EDITOR='nvim'
 export VISUAL='code'
-export PAGER='moar'
-export MOAR='--style=dracula --statusbar=bold'
+export PAGER='less'
+export MOAR='--style=dracula --statusbar=bold --quit-if-one-screen --no-clear-on-exit'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 if [[ -z "$LANG" ]]; then
