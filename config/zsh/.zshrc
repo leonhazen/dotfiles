@@ -60,9 +60,14 @@ fi
 ##### PATH
 export PATH=$PATH:~/Library/Android/sdk/platform-tools      # android studio
 export PATH=$PATH:~/Library/Android/sdk/cmdline-tools/bin   # android studio
+
 export PATH=$PATH:~/.local/bin                              # poetry
+
 export GOPATH=$HOME/go                                      # go
 export PATH=$PATH:$(go env GOPATH)/bin                      # go
+
+export VOLTA_HOME=$HOME/.volta
+export PATH=$PATH:$VOLTA_HOME/bin
 
 ##### my custom bits
 # my scripts
