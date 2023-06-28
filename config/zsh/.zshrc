@@ -28,6 +28,9 @@ autoload -U compinit && compinit
 # fzf
 source_if_exists $ZDOTDIR/fzf.zsh
 
+# orbstack (docker replacement)
+source_if_exists ~/.orbstack/shell/init.zsh
+
 # terraform
 complete -o nospace -C /usr/local/bin/terraform terraform
 
