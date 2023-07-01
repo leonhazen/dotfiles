@@ -1,0 +1,59 @@
+# This feels like too many layouts but I like the options
+layouts:
+    - two-pane
+    - fullscreen
+    - widescreen-tall
+    - widescreen-tall-right
+    - row
+    - wide
+    - 3column-left
+    - 3column-right
+    - floating
+
+mod1:
+    - option
+    - shift
+mod2:
+    - option
+    - shift
+    - control
+
+floating:
+    - "com.apple.systempreferences"
+    - "com.apple.calculator"
+    - "org.videolan.vlc"
+    - "com.valvesoftware.steam"
+    - "com.teamviewer.TeamViewer"
+    - "com.authy.authy-mac"
+    - "com.tann.dice.desktop"
+    - "com.philandro.anydesk"
+    - "com.electron.moonitor"
+    - "app.scriptkit"
+    - "us.zoom.xos"
+
+select-two-pane-layout:
+    mod: mod1
+    key: c
+
+command1:
+    mod: mod2
+    key: d
+
+command2:
+    mod: mod2
+    key: c
+
+mouse-resizes-windows: true
+mouse-swaps-windows: true
+
+# Add 10px margin between windows
+window-margins: true
+window-margin-size: 10
+
+# Minimize oldest window when count is greater than this (per screen)
+window-max-count: 0
+
+# Top padding needed if using sketchybar
+# screen-padding-top: 45
+
+focus-follows-mouse: false
