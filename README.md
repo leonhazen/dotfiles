@@ -1,5 +1,7 @@
 # Leon's dotfiles
 
+This repo uses [chezmoi](https://github.com/twpayne/chezmoi) to manage dotfiles.
+
 ## Prerequisites
 1. [Homebrew](https://brew.sh/)
 
@@ -10,12 +12,25 @@
     2. Copy from `~/.ssh/id_ed25519.pub` into https://github.com/settings/ssh/new
 
 ## Installation
-
+Not yet tested but chezmoi offers a 1 line install and apply command. I think this will be the way to go so that it's (mostly) platform independent.
 ```bash
-git clone git@github.com:leonhazen/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-git submodule update --recursive --init
-./install
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply leonhazen
+```
+
+Otherwise, install chezmoi using your package manager and use it to init from this github source.
+```bash
+brew install chezmoi
+chezmoi init https://github.com/leonhazen/dotfiles.git
+```
+
+Then check what changes it would make.
+```bash
+chezmoi diff
+```
+
+And if you're happy with the changes, apply them.
+```bash
+chezmoi apply -v
 ```
 
 ## App specific config
@@ -37,9 +52,4 @@ VS Code config is synced via the built-in sync function. This is using my github
 
 `tm` - tmux session helper function
 
-## Updating Dotbot
-
-In short, dotbot submodule can be updated with `git submodule update --remote dotbot`. Make sure to commit, and then run `./install` again.
-
-See https://github.com/anishathalye/dotbot for more info.
 

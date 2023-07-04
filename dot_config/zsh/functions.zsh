@@ -143,3 +143,18 @@ pods() {
         --preview-window up:follow \
         --preview 'kubectl logs --follow --all-containers --tail=10000 --namespace {1} {2}' "$@"
 }
+
+# solidify - replace a symlink with a copy of the file/folder it points to
+solidify() {
+    local target=$(readlink $1)
+    if [[ -z $target ]]; then
+        echo "Not a symlink"
+        return 1
+    fi
+    rm -fv $1
+    cp -afv $target $1 || {
+        # on failure, restore the symlink
+        rm -rfv "$1"
+        ln -sfv "$target" "$1"
+    }
+}
