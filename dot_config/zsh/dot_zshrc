@@ -66,8 +66,12 @@ export PATH=$PATH:~/.local/bin                              # poetry
 export GOPATH=$HOME/go                                      # go
 export PATH=$PATH:$(go env GOPATH)/bin                      # go
 
-export VOLTA_HOME=$HOME/.volta
-export PATH=$PATH:$VOLTA_HOME/bin
+export VOLTA_HOME=$HOME/.volta                              # volta for node version management
+export PATH=$PATH:$VOLTA_HOME/bin                           # volta for node version management
+
+export PYENV_ROOT="$HOME/.pyenv"                            # pyenv for python version management
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 ##### my custom bits
 # my scripts

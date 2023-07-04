@@ -136,3 +136,8 @@ alias cmdiff="chezmoi diff"
 alias cmcd="chezmoi cd"
 alias cmst="chezmoi status"
 alias cmap="chezmoi apply -v"
+
+# python
+alias python="python3"
+alias py="python3"
+alias pip="pip3"
