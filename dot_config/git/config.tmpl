@@ -1,6 +1,7 @@
 [user]
 name = Leon Hazen
-email = 403745+leonhazen@users.noreply.github.com
+email = {{ .email }}
+signingkey = {{ .gitSigningKey }}
 [init]
 defaultBranch = main
 [alias]
@@ -31,3 +32,7 @@ conflictstyle = diff3
 colorMoved = default
 [url "git@github.com:"]
 insteadOf = https://github.com/
+{{- if .gitSigningEnabled }}
+[commit]
+gpgsign = true
+{{ end }}

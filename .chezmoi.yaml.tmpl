@@ -1,0 +1,10 @@
+{{ $email := promptString "email" "403745+leonhazen@users.noreply.github.com" -}}
+{{ $profile := promptStringOnce . "profile" "Profile (work/personal)" }}
+{{ $gitSigningEnabled := promptBoolOnce . "gitSigningEnabled" "Enable git signing?" }}
+{{ $gitSigningKey := promptStringOnce . "gitSigningKey" "GPG key ID" }}
+
+data:
+    email: {{ $email | quote }}
+    profile: {{ $profile | quote }}
+    gitSigningEnabled: {{ $gitSigningEnabled }}
+    gitSigningKey: {{ $gitSigningKey | quote }}
