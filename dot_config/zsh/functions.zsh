@@ -158,3 +158,21 @@ solidify() {
         ln -sfv "$target" "$1"
     }
 }
+
+# suggest_gclone - if the input buffer is a github URL, replace it with a git clone command
+function suggest_gclone() {
+    local url="$BUFFER"
+    if [[ "$url" =~ ^https://github\.com/[^/]+/[^/]+ ]]; then
+        local repo=${url#https://github.com/}
+        repo=${repo%%/*} # Extract only the username part
+        local nextSegment=${url#https://github.com/$repo/}
+        local repoName=${nextSegment%%/*} # Extract the repo name
+        BUFFER="git clone git@github.com:${repo}/${repoName}.git"
+        zle redisplay
+    else
+        zle self-insert
+    fi
+}
+
+zle -N suggest_gclone
+bindkey '^G' suggest_gclone

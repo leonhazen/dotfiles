@@ -55,8 +55,8 @@ alias gs="git status"
 alias ga="git add"
 alias gp="git push"
 alias gpo="git push origin"
+alias gpf="git push --force"
 alias gpl="git pull"
-alias gb="git branch"
 alias gl="git log"
 alias glg="git log --graph --oneline --decorate --all"
 alias glo="git log --oneline --decorate --all"
@@ -67,7 +67,7 @@ alias gcob="git checkout -b"
 alias gc="git clone"
 
 # suffix alias to allow you to just paste a repo link and it will clone it
-alias -s git="git clone --depth 1"
+alias -s git="git clone"
 
 # git commit helper (requires gum)
 # calls /utils/git-commit.sh

@@ -57,6 +57,21 @@ if [ $(ps ax | grep "[s]sh-agent" | wc -l) -eq 0 ] ; then
     fi
 fi
 
+# pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# poetry
+if [[ ! -a ~/.zfunc/_poetry ]]; then
+    mkdir ~/.zfunc
+    poetry completions zsh > ~/.zfunc/_poetry
+fi
+if command -v poetry 1>/dev/null 2>&1; then
+    fpath+=~/.zfunc
+    autoload -Uz compinit && compinit
+fi
+
 ##### PATH
 export PATH=$PATH:~/Library/Android/sdk/platform-tools      # android studio
 export PATH=$PATH:~/Library/Android/sdk/cmdline-tools/bin   # android studio
@@ -81,7 +96,10 @@ export PATH=$PATH:~/.utils
 export OPENAI_API_KEY=$(keychain.sh get OPENAI_API_KEY)
 
 # Options for alias mappings
-export USE_VSCODE_INSIDERS=1
+export USE_VSCODE_INSIDERS=0
+
+# GPG
+export GPG_TTY=$(tty)
 
 # my aliases
 source_if_exists $ZDOTDIR/aliases.zsh
@@ -95,9 +113,37 @@ plugin_repos=(
     zsh-users/zsh-history-substring-search
     zsh-users/zsh-autosuggestions
     zsh-users/zsh-syntax-highlighting
+    unixorn/fzf-zsh-plugin
+    Aloxaf/fzf-tab
 )
 
 # plugin-load is defined in functions.zsh and it's 👌🏻
 plugin-load $plugin_repos
 
+
+## fzf tab completion config
+# use tmux fzf popup
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+# apply to all command
+zstyle ':fzf-tab:*' popup-min-size 100 25
+
+# use less previews in popup
+zstyle ':fzf-tab:complete:*:*' fzf-preview 'less ${(Q)realpath}'
+# export LESSOPEN='|~/.config/zsh/.lessfilter %s'
+export LESS='-R'
+# export LESSOPEN="|/.lessfilter %s"
+eval "$(lesspipe.sh)" 
+
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# switch group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
+
+# tldr previews
+zstyle ':fzf-tab:complete:tldr:argument-1' fzf-preview 'tldr --color always $word'
+
+
+# p10k
 source_if_exists $ZDOTDIR/.p10k.zsh
