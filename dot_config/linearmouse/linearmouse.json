@@ -1,5 +1,5 @@
 {
-  "$schema" : "https:\/\/app.linearmouse.org\/schema\/0.7.2",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.3",
   "schemes" : [
     {
       "pointer" : {
@@ -13,6 +13,11 @@
           "productID" : "0xc52b",
           "category" : "mouse",
           "vendorID" : "0x46d"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1.7
         }
       }
     }
