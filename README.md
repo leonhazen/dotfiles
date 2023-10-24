@@ -35,6 +35,11 @@ chezmoi apply -v
 
 ## App specific config
 
+### LG TV
+Hammerspoon is used to call LUA scripts on Macbook wake/sleep events. Need to auth the machine with the TV first using `lgtv auth 192.168.1.139 MyTV ssl`.
+
+If that IP changes (it's currently DHCP reserved), need to update it in `lgtv_init.lua`. That also defines the HDMI port used for the laptop connection.
+
 ### tmux
 tmux plugins are installed via TPM. Launch tmux and ctrl+A I to install TPM plugins. 
 
