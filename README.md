@@ -58,3 +58,12 @@ VS Code config is synced via the built-in sync function. This is using my github
 `tm` - tmux session helper function
 
 
+## TODO
+- Auto Brewfile
+- Different Brewfiles for work + personal
+- Either different GPG keys for work + personal or find best practice for 1 standard one
+- WSL profile
+- Arch profile
+- Template vars
+- Encryption
+- 1Password
